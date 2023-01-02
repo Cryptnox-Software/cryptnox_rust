@@ -1,0 +1,26 @@
+[package]
+name = "cryptnox_rs"
+version = "0.1.0"
+edition = "2021"
+authors = ["Chris <cj.christopherjude@gmail.com>","Jakub smulski "]
+description = "A communications library to interact with Cryptnox cards"
+license-file = "LICENSE"
+categories = ["command-line-utilities","cryptography::cryptocurrencies"]
+exclude = ["/tests",".gitignore"]
+
+[dependencies]
+reqwest = "0.11.11"
+thiserror = "1.0"
+bytes = "1.2.1"
+pcsc = "2.6"
+nfc1 = "0.4"
+openssl = "0.10.41"
+ouroboros = "0.13"
+num-bigint = "0.4.3"
+rand = "0.8.5"
+hex = "0.4.3"
+futures = "0.3"
+tokio = { version = "1.17.0", features = ["full"] }
+regex = "1"
+num-traits = "0.2.15"
+sha256 = "1.0.3"
